@@ -245,3 +245,4 @@ C:\Users\Adil\Desktop\PustokBackEnd\obj\Debug\net6.0\refint\PustokBackEnd.dll
 C:\Users\Adil\Desktop\PustokBackEnd\obj\Debug\net6.0\PustokBackEnd.pdb
 C:\Users\Adil\Desktop\PustokBackEnd\obj\Debug\net6.0\PustokBackEnd.genruntimeconfig.cache
 C:\Users\Adil\Desktop\PustokBackEnd\obj\Debug\net6.0\ref\PustokBackEnd.dll
+C:\Users\Adil\Desktop\PustokBackEnd\obj\Debug\net6.0\PustokBackEnd.sourcelink.json

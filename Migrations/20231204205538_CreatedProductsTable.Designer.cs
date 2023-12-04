@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PustokBackEnd.Contexts;
 
@@ -10,9 +11,10 @@ using PustokBackEnd.Contexts;
 namespace PustokBackEnd.Migrations
 {
     [DbContext(typeof(PustokDBContext))]
-    partial class PustokDBContextModelSnapshot : ModelSnapshot
+    [Migration("20231204205538_CreatedProductsTable")]
+    partial class CreatedProductsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,7 +94,7 @@ namespace PustokBackEnd.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("PustokBackEnd.Models.Slider", b =>
