@@ -24,7 +24,6 @@ namespace PustokBackEnd.Areas.Admin.Controllers
             {
                 Id = p.Id,
                 Name = p.Name,
-                ImageUrl = p.ImageUrl,
                 Brands = p.Brands,
                 RewardPoint = p.RewardPoint,
                 SellPrice = p.SellPrice,
@@ -33,6 +32,7 @@ namespace PustokBackEnd.Areas.Admin.Controllers
                 Quantity = p.Quantity,
                 Category = p.Category,
                 IsDeleted = p.IsDeleted,
+
             }));
         }
         public IActionResult Create()
@@ -65,10 +65,12 @@ namespace PustokBackEnd.Areas.Admin.Controllers
                 Quantity = vm.Quantity,
                 Description = vm.Description,
                 Discount = vm.Discount,
-                ImageUrl = vm.ImageUrl,
                 CostPrice = vm.CostPrice,
                 SellPrice = vm.SellPrice,
-                CategoryId = vm.CategoryId
+                CategoryId = vm.CategoryId,
+                Brands = vm.Brands,
+                RewardPoint = vm.RewardPoint,
+                Title = vm.Title,
             };
             await _db.Products.AddAsync(product);
             await _db.SaveChangesAsync();

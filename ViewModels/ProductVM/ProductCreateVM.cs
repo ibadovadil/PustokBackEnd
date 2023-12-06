@@ -8,7 +8,6 @@ public class ProductCreateVM
 {
     [MaxLength(64)]
     public string Name { get; set; }
-    public string? ImageUrl { get; set; }
     public string Description { get; set; }
     public string? Brands { get; set; }
     [MaxLength(256)]
@@ -22,4 +21,6 @@ public class ProductCreateVM
     public float Discount { get; set; }
     public ushort Quantity { get; set; }
     public int CategoryId { get; set; }
+    public bool IsDeleted { get; set; } = false;
+    public IEnumerable<ProductImages> ProductImages { get; set; }
 }
